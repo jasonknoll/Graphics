@@ -5,6 +5,7 @@ use winit::{
     window::WindowBuilder,
 };
 
+// TODO do something! haha learn wGPU please
 pub fn run() {
     env_logger::init();
     let event_loop = EventLoop::new().unwrap();

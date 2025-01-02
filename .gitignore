@@ -440,3 +440,5 @@ FodyWeavers.xsd
 .cxx
 local.properties
 
+*.exe
+

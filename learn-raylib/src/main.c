@@ -1,6 +1,7 @@
 #include "raylib.h"
 
 // TODO hello triangle
+// TODO Pong
 
 int main() {
     const int screenWidth = 800;

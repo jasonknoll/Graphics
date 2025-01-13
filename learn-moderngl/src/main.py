@@ -23,11 +23,14 @@ def main():
 
     ctx.viewport = (0, 0, 640, 320)
 
+    # Main Loop
     while not glfw.window_should_close(window):
         ctx.clear(0.2, 0.3, 0.3, 1.0)
 
         glfw.swap_buffers(window)
         glfw.poll_events()
+
+        # TODO draw triangle, cube
 
     glfw.terminate()
 

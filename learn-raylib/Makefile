@@ -1,6 +1,6 @@
 CC = gcc
 CFLAGS = -Iinclude
-LDFLAGS = -Llib -lraylib -lgdi32 -lwinmm
+LDFLAGS = -Llib -lraylib -lraygui -lgdi32 -lwinmm 
 
 SRC_DIR = src
 BUILD_DIR = build

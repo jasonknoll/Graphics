@@ -9,6 +9,9 @@ int main() {
     const int screenHeight = 600;
     InitWindow(screenWidth, screenHeight, "raylib basic window");
     SetTargetFPS(60);
+
+    int offset = 0;
+    
     while (!WindowShouldClose()) {
         BeginDrawing();
         ClearBackground(RAYWHITE);
@@ -18,8 +21,11 @@ int main() {
         Vector2 v2 = (Vector2){100, 130};
         Vector2 v3 = (Vector2){140, 100};
 
-        DrawTriangle(v1, v2, v3, GREEN);
+        // Frame-based movement
+        DrawTriangle(v1+offset, v2+offset, v3+offset, GREEN);
 
+        offset++;
+        
         EndDrawing();
     }
     CloseWindow();

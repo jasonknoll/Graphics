@@ -17,12 +17,13 @@ int main() {
         ClearBackground(RAYWHITE);
         DrawText("It works!", 20, 20, 20, BLACK);
 
-        Vector2 v1 = (Vector2){100, 100};
-        Vector2 v2 = (Vector2){100, 130};
-        Vector2 v3 = (Vector2){140, 100};
-
         // Frame-based movement
-        DrawTriangle(v1+offset, v2+offset, v3+offset, GREEN);
+        Vector2 v1 = (Vector2){100+offset, 100};
+        Vector2 v2 = (Vector2){100+offset, 130};
+        Vector2 v3 = (Vector2){140+offset, 100};
+
+        
+        DrawTriangle(v1, v2, v3, GREEN);
 
         offset++;
         
